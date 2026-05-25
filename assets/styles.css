@@ -275,6 +275,7 @@ h3 {
 .ppt-panel,
 .deck-list,
 .lab-card,
+.download-card,
 .discussion-card,
 .teacher-card {
   border: 1px solid rgba(216, 228, 242, 0.95);
@@ -419,6 +420,7 @@ h3 {
 
 .path-card:hover,
 .lab-card:hover,
+.download-card:hover,
 .discussion-card:hover,
 .teacher-card:hover {
   transform: translateY(-2px);
@@ -739,6 +741,142 @@ h3 {
   color: #167653;
 }
 
+.downloads-section {
+  background:
+    linear-gradient(180deg, rgba(248, 252, 255, 0.98), rgba(238, 247, 255, 0.72)),
+    radial-gradient(circle at 12% 0%, rgba(46, 202, 165, 0.12), transparent 30%),
+    radial-gradient(circle at 88% 4%, rgba(25, 103, 232, 0.1), transparent 34%),
+    #f7fbff;
+  border-block: 1px solid var(--line);
+}
+
+.download-source {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(25, 103, 232, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
+  padding: 8px 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+.download-source span {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.download-source a {
+  color: var(--text);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.download-card {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  padding: 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 252, 255, 0.94)),
+    #fff;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.download-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.download-card-top span,
+.download-card-top small {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  padding: 7px 10px;
+  white-space: nowrap;
+}
+
+.download-card-top span {
+  background: var(--surface-blue);
+  color: var(--blue);
+}
+
+.download-card-top small {
+  background: rgba(46, 202, 165, 0.12);
+  color: #167653;
+}
+
+.download-card h3 {
+  min-height: 56px;
+  margin-bottom: 10px;
+}
+
+.download-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.download-meta {
+  display: grid;
+  gap: 8px;
+  margin: auto 0 16px;
+}
+
+.download-meta div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid rgba(216, 228, 242, 0.86);
+  border-radius: 14px;
+  background: rgba(238, 247, 255, 0.72);
+  padding: 10px 12px;
+}
+
+.download-meta dt {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.download-meta dd {
+  margin: 0;
+  color: var(--text);
+  font-weight: 900;
+}
+
+.download-card .button {
+  width: 100%;
+}
+
+.highlight-download {
+  border-color: rgba(25, 103, 232, 0.28);
+  background:
+    linear-gradient(135deg, rgba(25, 103, 232, 0.1), rgba(18, 184, 215, 0.08)),
+    rgba(255, 255, 255, 0.94);
+}
+
 .community-section {
   background:
     linear-gradient(180deg, #fff, #f6faff),
@@ -822,6 +960,7 @@ h3 {
 @media (max-width: 1180px) {
   .path-grid,
   .lab-grid,
+  .download-grid,
   .resource-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -893,6 +1032,7 @@ h3 {
   .stats-bar,
   .path-grid,
   .lab-grid,
+  .download-grid,
   .community-grid,
   .teacher-card {
     grid-template-columns: 1fr;
@@ -918,6 +1058,13 @@ h3 {
   .resource-grid,
   .resource-grid.two-up {
     grid-template-columns: 1fr;
+  }
+
+  .download-source {
+    width: 100%;
+    align-items: flex-start;
+    border-radius: 16px;
+    flex-direction: column;
   }
 
   .viewer-frame iframe {
