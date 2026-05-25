@@ -22,3 +22,9 @@ npx serve . -l 4173
 仓库包含 `render.yaml`，可在 Render 选择 Blueprint 或 Static Site 方式部署。发布目录为项目根目录，无需构建命令。
 
 原始 PPT 不提交到 Git 仓库，部署后通过 GitHub Release 资产提供下载链接。
+
+一键部署入口：
+
+```text
+https://render.com/deploy?repo=https://github.com/Hua-TFSU/intelligent-translation-tech-site
+```
