@@ -667,6 +667,10 @@ h3 {
   gap: 14px;
 }
 
+.resource-grid.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .resource-card {
   display: grid;
   min-height: 156px;
@@ -721,6 +725,18 @@ h3 {
   background:
     linear-gradient(135deg, rgba(25, 103, 232, 0.1), rgba(18, 184, 215, 0.08)),
     rgba(255, 255, 255, 0.88);
+}
+
+.resource-card.source-resource {
+  border-color: rgba(34, 160, 107, 0.32);
+  background:
+    linear-gradient(135deg, rgba(34, 160, 107, 0.1), rgba(245, 185, 66, 0.08)),
+    rgba(255, 255, 255, 0.9);
+}
+
+.resource-card.source-resource span {
+  background: rgba(34, 160, 107, 0.12);
+  color: #167653;
 }
 
 .community-section {
@@ -899,7 +915,8 @@ h3 {
     flex-direction: column;
   }
 
-  .resource-grid {
+  .resource-grid,
+  .resource-grid.two-up {
     grid-template-columns: 1fr;
   }
 

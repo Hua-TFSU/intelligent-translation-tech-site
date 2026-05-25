@@ -43,6 +43,21 @@ const PPTS = {
       "学生交付与复盘要求",
     ],
   },
+  vibe: {
+    title: "Vibe Coding 氛围编程入门",
+    kicker: "AI IDE / Vibe Coding / Prototype Development",
+    asset: "assets/courseware/vibe-coding-intro.pptx",
+    viewerAsset:
+      "https://intelligent-translation-tech-site.onrender.com/assets/courseware/vibe-coding-intro.pptx?v=vibe-20260525",
+    outline: [
+      "课程路径与课前准备",
+      "工具矩阵：秒哒、Trae、Cursor、Codex",
+      "Vibe Coding 反馈循环",
+      "秒哒、Trae、Cursor、Codex 核查点",
+      "OpenClaw / DuClaw 行动智能体实战",
+      "迁移到翻译技术应用原型",
+    ],
+  },
 };
 
 const state = {

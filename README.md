@@ -7,6 +7,7 @@
 - 自主学习区：通过 Office Online Viewer 嵌入原始 PPT，保留版式、图片和软件截图，并提供全屏打开与下载入口。
 - 研发实验室：MemoQ / CAT、Trados、智能体设计、VibeCoding 四条训练线。
 - 智能体资料：提供“口语口译智能体设计与优化”PPT，并链接少儿口语对话流智能体、CATTI 口译练习智能体两份飞书练习。
+- Vibe Coding 资料：提供“Vibe Coding 氛围编程入门”PPT，并保留飞书原文标签链接。
 - 学生交流区：预留 GitHub Discussions 入口。
 - 联系教师：根据项目文件夹中的朱华简历整理公开简介。
 
