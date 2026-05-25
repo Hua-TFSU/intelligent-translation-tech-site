@@ -7,6 +7,9 @@ npm-debug.log*
 *.ppt
 ~$*
 
+# 允许轻量自制课件随静态站点发布。
+!assets/courseware/agent-interpreting-workflow.pptx
+
 # 教师简历原始文件不直接发布，网站只使用公开简介摘录。
 *.doc
 *.docx

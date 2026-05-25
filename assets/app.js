@@ -27,6 +27,22 @@ const PPTS = {
       "复杂项目管理与真实交付",
     ],
   },
+  agent: {
+    title: "口语口译智能体设计与优化",
+    kicker: "Coze / Agent Workflow / Interpreting Practice",
+    asset: "assets/courseware/agent-interpreting-workflow.pptx",
+    viewerAsset:
+      "https://intelligent-translation-tech-site.onrender.com/assets/courseware/agent-interpreting-workflow.pptx?v=agent-20260525",
+    outline: [
+      "课程目标与多模态模型边界",
+      "扣子平台与智能体工作流",
+      "工作流的三种认知模型",
+      "交替传译训练 SOP",
+      "开始节点、知识库、TTS 与转写",
+      "高效与低效工作流优化",
+      "学生交付与复盘要求",
+    ],
+  },
 };
 
 const state = {
@@ -44,6 +60,7 @@ const els = {
   download: document.querySelector("#download-ppt"),
   outlineTitle: document.querySelector("#outline-title"),
   outlineList: document.querySelector("#outline-list"),
+  resourceDeckLinks: document.querySelectorAll("[data-open-deck]"),
 };
 
 function officeViewerUrl(assetUrl) {
@@ -62,11 +79,13 @@ function setDeck(deckId) {
 
 function renderDeck() {
   const deck = PPTS[state.deck] || PPTS.cat;
+  const viewerAsset = deck.viewerAsset || deck.asset;
+  const downloadAsset = deck.asset;
   els.title.textContent = deck.title;
   els.kicker.textContent = deck.kicker;
-  els.frame.src = officeViewerUrl(deck.asset);
-  els.open.href = officeOpenUrl(deck.asset);
-  els.download.href = deck.asset;
+  els.frame.src = officeViewerUrl(viewerAsset);
+  els.open.href = officeOpenUrl(viewerAsset);
+  els.download.href = downloadAsset;
   els.outlineTitle.textContent = `${deck.title}结构`;
   els.outlineList.innerHTML = "";
 
@@ -94,6 +113,15 @@ function init() {
   els.nav.addEventListener("click", () => {
     els.nav.classList.remove("open");
     els.navToggle.setAttribute("aria-expanded", "false");
+  });
+
+  els.resourceDeckLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      setDeck(link.dataset.openDeck);
+      document.querySelector("#courseware")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.pushState(null, "", "#courseware");
+    });
   });
 
   renderDeck();

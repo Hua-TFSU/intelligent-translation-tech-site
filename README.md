@@ -6,6 +6,7 @@
 
 - 自主学习区：通过 Office Online Viewer 嵌入原始 PPT，保留版式、图片和软件截图，并提供全屏打开与下载入口。
 - 研发实验室：MemoQ / CAT、Trados、智能体设计、VibeCoding 四条训练线。
+- 智能体资料：提供“口语口译智能体设计与优化”PPT，并链接少儿口语对话流智能体、CATTI 口译练习智能体两份飞书练习。
 - 学生交流区：预留 GitHub Discussions 入口。
 - 联系教师：根据项目文件夹中的朱华简历整理公开简介。
 
@@ -21,7 +22,7 @@ npx serve . -l 4173
 
 仓库包含 `render.yaml`，可在 Render 选择 Blueprint 或 Static Site 方式部署。发布目录为项目根目录，无需构建命令。
 
-原始 PPT 不提交到 Git 仓库，部署后通过 GitHub Release 资产提供下载链接。
+原始 CAT / Trados PPT 不提交到 Git 仓库，部署后通过 GitHub Release 资产提供下载链接；轻量自制课件可随站点静态资源一起发布。
 
 一键部署入口：
 
