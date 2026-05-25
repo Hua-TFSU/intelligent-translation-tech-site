@@ -2,9 +2,11 @@ services:
   - type: web
     name: intelligent-translation-tech-site
     runtime: static
+    branch: main
     buildCommand: ""
     staticPublishPath: .
-    pullRequestPreviewsEnabled: true
+    previews:
+      generation: automatic
     routes:
       - type: rewrite
         source: /*
