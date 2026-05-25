@@ -8,8 +8,8 @@ const state = {
 const repoUrl = "https://github.com/Hua-TFSU/intelligent-translation-tech-site";
 const releaseUrl = `${repoUrl}/releases/latest`;
 const downloads = {
-  cat: `${releaseUrl}/download/计算机辅助翻译软件CAT简介.pptx`,
-  trados: `${releaseUrl}/download/Trados2022_从入门到进阶.pptx`,
+  cat: `${releaseUrl}/download/CAT.pptx`,
+  trados: `${releaseUrl}/download/Trados2022_.pptx`,
 };
 
 const els = {
