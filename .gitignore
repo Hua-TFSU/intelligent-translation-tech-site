@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+npm-debug.log*
+
+# 原始课件通过 GitHub Release 上传，避免 GitHub 仓库 100MB 单文件限制。
+*.pptx
+*.ppt
+~$*
+
+# 教师简历原始文件不直接发布，网站只使用公开简介摘录。
+*.doc
+*.docx

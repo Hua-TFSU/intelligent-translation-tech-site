@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="智能翻译技术应用与研发课程网站：CAT、Trados、MemoQ、智能体设计、VibeCoding、学生交流与教师联系。"
+    />
+    <title>智能翻译技术应用与研发</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">IT</span>
+        <span>
+          <strong>智能翻译技术应用与研发</strong>
+          <small>CAT · LLM · Agent · VibeCoding</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+      <nav id="site-nav" class="site-nav" aria-label="主导航">
+        <a href="#learn">自主学习区</a>
+        <a href="#lab">研发实验室</a>
+        <a href="#exchange">学生交流区</a>
+        <a href="#teacher">联系教师</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Course Portal 2026</p>
+          <h1><span>把翻译技术学成</span><span>一套能交付的工作流</span></h1>
+          <p class="lead">
+            面向语言类专业学生的智能翻译技术课程空间，聚合 CAT 工具、自主课件、智能体设计、VibeCoding 与课堂交流。
+          </p>
+          <div class="hero-actions" aria-label="快捷入口">
+            <a class="button primary" href="#learn">进入课件</a>
+            <a class="button" href="#lab">查看研发任务</a>
+          </div>
+        </div>
+        <div class="signal-panel" aria-label="课程核心能力">
+          <div class="signal-header">
+            <span>Learning Stack</span>
+            <strong>4 条主线</strong>
+          </div>
+          <div class="signal-grid">
+            <a href="#learn" class="signal-card">
+              <span class="signal-index">01</span>
+              <strong>CAT 基础</strong>
+              <small>MemoQ / Trados / 术语库 / 翻译记忆库</small>
+            </a>
+            <a href="#lab" class="signal-card">
+              <span class="signal-index">02</span>
+              <strong>智能体设计</strong>
+              <small>任务拆解、工具调用、质量检查</small>
+            </a>
+            <a href="#lab" class="signal-card">
+              <span class="signal-index">03</span>
+              <strong>VibeCoding</strong>
+              <small>用 AI 协作开发翻译应用原型</small>
+            </a>
+            <a href="#exchange" class="signal-card">
+              <span class="signal-index">04</span>
+              <strong>课堂协作</strong>
+              <small>问题池、项目组、作品展示</small>
+            </a>
+          </div>
+          <figure class="hero-preview">
+            <img src="assets/images/cat-workflow.png" alt="memoQ 项目管理界面截图" />
+            <figcaption>从真实 CAT 软件界面进入项目化学习</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="metric-strip" aria-label="课程概览">
+        <div>
+          <strong id="deck-count">2</strong>
+          <span>套课件</span>
+        </div>
+        <div>
+          <strong id="slide-count">235</strong>
+          <span>页可浏览内容</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span>个学习模块</span>
+        </div>
+        <div>
+          <strong>1</strong>
+          <span>个课程交流区</span>
+        </div>
+      </section>
+
+      <section id="learn" class="section-band">
+        <div class="section-heading">
+          <p class="eyebrow">Self Learning</p>
+          <h2>自主学习区</h2>
+          <p>
+            已有 PPT 被整理为网页课件，支持按主题分节浏览、上一页/下一页切换、关键词搜索与进度记录。
+          </p>
+        </div>
+
+        <div class="tool-shots" aria-label="课件中的软件界面截图">
+          <figure>
+            <img src="assets/images/cat-workflow.png" alt="memoQ 项目管理界面" />
+            <figcaption>MemoQ 项目管理</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/trados-interface.png" alt="Trados 2022 翻译界面" />
+            <figcaption>Trados 术语插入与双语编辑</figcaption>
+          </figure>
+        </div>
+
+        <div class="learning-layout">
+          <aside class="resource-rail" aria-label="学习资源">
+            <button class="resource-tab active" type="button" data-deck="cat">
+              <span>MemoQ / CAT</span>
+              <small>计算机辅助翻译软件简介</small>
+            </button>
+            <button class="resource-tab" type="button" data-deck="trados">
+              <span>Trados 2022</span>
+              <small>从入门到进阶</small>
+            </button>
+            <a class="resource-link" id="cat-download" href="#" aria-disabled="true">CAT 原始课件下载</a>
+            <a class="resource-link" id="trados-download" href="#" aria-disabled="true">Trados 原始课件下载</a>
+          </aside>
+
+          <article class="deck-viewer" aria-live="polite">
+            <div class="deck-toolbar">
+              <div>
+                <p class="eyebrow" id="deck-kicker">Courseware</p>
+                <h3 id="deck-title">课件加载中</h3>
+              </div>
+              <label class="search-box">
+                <span>搜索</span>
+                <input id="slide-search" type="search" placeholder="输入关键词" />
+              </label>
+            </div>
+
+            <div class="section-tabs" id="section-tabs" aria-label="课件分节"></div>
+
+            <div class="slide-stage">
+              <div class="slide-meta">
+                <span id="slide-section">章节</span>
+                <span id="slide-progress">0 / 0</span>
+              </div>
+              <h4 id="slide-title">正在读取</h4>
+              <ul id="slide-points" class="slide-points"></ul>
+            </div>
+
+            <div class="slide-controls">
+              <button class="icon-button" type="button" id="prev-slide" aria-label="上一页">←</button>
+              <input id="slide-range" type="range" min="1" value="1" />
+              <button class="icon-button" type="button" id="next-slide" aria-label="下一页">→</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="lab" class="section-band alt">
+        <div class="section-heading">
+          <p class="eyebrow">Translation Tech Lab</p>
+          <h2>研发实验室</h2>
+          <p>围绕“会用工具、能设计流程、能做原型”组织训练，把翻译技术能力落到可演示作品。</p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-card">
+            <span class="lab-code">A1</span>
+            <h3>MemoQ 与 CAT 工作流</h3>
+            <p>理解翻译记忆库、术语库、项目包、审校与质量检查，把手工翻译流程转换为可管理的生产流程。</p>
+            <ul>
+              <li>术语抽取与术语库维护</li>
+              <li>翻译记忆库创建、复用与清洗</li>
+              <li>项目交付与质量报告解读</li>
+            </ul>
+          </article>
+          <article class="lab-card">
+            <span class="lab-code">A2</span>
+            <h3>Trados 2022 项目实践</h3>
+            <p>从单个 Word 文档翻译走向复杂项目管理，熟悉文件类型、资源配置、批处理任务与定稿交付。</p>
+            <ul>
+              <li>界面模块与项目结构</li>
+              <li>翻译记忆库、术语库、QA 检查</li>
+              <li>报告、统计、签发与项目归档</li>
+            </ul>
+          </article>
+          <article class="lab-card accent">
+            <span class="lab-code">B1</span>
+            <h3>智能体设计</h3>
+            <p>把翻译任务拆成可复用的智能体流程：角色、输入、工具、记忆、检查清单与人工确认节点。</p>
+            <ul>
+              <li>翻译智能体任务图</li>
+              <li>术语检索与译后编辑 Agent</li>
+              <li>LLM-as-judge 质量评估</li>
+            </ul>
+          </article>
+          <article class="lab-card accent">
+            <span class="lab-code">B2</span>
+            <h3>VibeCoding</h3>
+            <p>用 AI 协作完成小型翻译应用原型，从需求描述、界面搭建到本地调试与云端部署。</p>
+            <ul>
+              <li>翻译术语查询网页</li>
+              <li>译后编辑打分面板</li>
+              <li>双语语料清洗与可视化工具</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="exchange" class="section-band">
+        <div class="section-heading">
+          <p class="eyebrow">Class Forum</p>
+          <h2>学生交流区</h2>
+          <p>课堂问题、工具报错、项目想法和作品链接可以先记录在本地问题池，再同步到课程讨论区。</p>
+        </div>
+
+        <div class="exchange-layout">
+          <form class="question-form" id="question-form">
+            <label>
+              <span>问题标题</span>
+              <input name="title" required maxlength="60" placeholder="例如：Trados 术语库无法识别中文术语" />
+            </label>
+            <label>
+              <span>问题类型</span>
+              <select name="type">
+                <option>工具操作</option>
+                <option>智能体设计</option>
+                <option>VibeCoding</option>
+                <option>作品展示</option>
+              </select>
+            </label>
+            <label>
+              <span>补充说明</span>
+              <textarea name="body" rows="5" placeholder="写下环境、步骤、截图链接或你已经尝试过的方法"></textarea>
+            </label>
+            <button class="button primary" type="submit">加入问题池</button>
+          </form>
+
+          <div class="question-board">
+            <div class="board-header">
+              <h3>问题池</h3>
+              <button class="button compact" type="button" id="clear-questions">清空本地记录</button>
+            </div>
+            <div id="question-list" class="question-list"></div>
+            <a class="discussion-link" id="discussion-link" href="#" target="_blank" rel="noreferrer">
+              打开 GitHub Discussions
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="teacher" class="section-band alt teacher-section">
+        <div class="section-heading">
+          <p class="eyebrow">Instructor</p>
+          <h2>联系教师</h2>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar" aria-hidden="true">朱</div>
+          <div>
+            <h3>朱华</h3>
+            <p class="teacher-title">
+              天津外国语大学高级翻译学院党委委员、硕士生导师；天津外国语大学智能语言服务产业学院执行院长；天津外国语大学人工智能翻译实验室主任。
+            </p>
+            <dl class="teacher-meta">
+              <div>
+                <dt>研究方向</dt>
+                <dd>智能翻译技术应用与开发、本地化项目管理、党和国家重要文献翻译研究</dd>
+              </div>
+              <div>
+                <dt>代表课程</dt>
+                <dd>智能翻译技术应用与研发、网站/程序/游戏本地化、翻译和本地化项目管理</dd>
+              </div>
+              <div>
+                <dt>邮箱</dt>
+                <dd><a href="mailto:zhuhua@tjfsu.edu.cn">zhuhua@tjfsu.edu.cn</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>智能翻译技术应用与研发</span>
+      <span>Built for classroom learning, project practice and cloud deployment.</span>
+    </footer>
+
+    <script src="assets/data/decks.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
