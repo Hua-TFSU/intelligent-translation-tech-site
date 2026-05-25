@@ -4,9 +4,9 @@
 
 ## 内容模块
 
-- 自主学习区：将 `计算机辅助翻译软件CAT简介.pptx` 与 `Trados2022_从入门到进阶.pptx` 抽取为网页课件，支持分节、搜索、上一页/下一页和进度记录。
+- 自主学习区：通过 Office Online Viewer 嵌入原始 PPT，保留版式、图片和软件截图，并提供全屏打开与下载入口。
 - 研发实验室：MemoQ / CAT、Trados、智能体设计、VibeCoding 四条训练线。
-- 学生交流区：静态站点内置本地问题池，并预留 GitHub Discussions 入口。
+- 学生交流区：预留 GitHub Discussions 入口。
 - 联系教师：根据项目文件夹中的朱华简历整理公开简介。
 
 ## 本地预览
