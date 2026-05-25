@@ -2,7 +2,8 @@ const PPTS = {
   cat: {
     title: "计算机辅助翻译软件 CAT 简介",
     kicker: "MemoQ / CAT / Translation Workflow",
-    asset: "https://github.com/Hua-TFSU/intelligent-translation-tech-site/releases/download/courseware-v1/CAT.pptx",
+    asset:
+      "https://github.com/Hua-TFSU/intelligent-translation-tech-site/releases/download/courseware-v1/CAT.pptx?v=compressed-20260525",
     outline: [
       "课程导入与学习原则",
       "CAT 软件是什么",
